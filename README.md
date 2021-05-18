@@ -3,7 +3,6 @@
 Celem projektu było stworzenie środkowiska, opartego o robota Ardrone z możliwością
 autonomicznego podążania za robotem Husky.
 
-
 ## Instalacja dockera
 Pobrać pliki dockera [stąd](https://drive.google.com/file/d/1qRobw97PCbPGaR0gGytjJ35a-JCViHB-/view?usp=sharing).
 
@@ -68,3 +67,4 @@ source /opt/ros/indigo/setup.bash
 source devel/setup.bash
 roslaunch cvg_sim_gazebo ardrone_testworld.launch
 ```
+Program autonomicznego podążania drona został zaimplementowany w pliku /cvg_sim_gazebo/scripts/autonomous.py 
