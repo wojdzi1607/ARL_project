@@ -33,7 +33,7 @@ rosmake joy
 ```
 source: [here](http://wiki.ros.org/tum_simulator)
 ## Instalcja wymaganych paczek
-Zainstalować w catkin_ws
+Zainstalować w catkin_ws dodatkowe paczki gazebo:
 
 https://github.com/ros-simulation/gazebo_ros_pkgs/tree/indigo-devel
 
