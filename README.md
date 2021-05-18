@@ -36,6 +36,7 @@ rosmake joy
 source: [here](http://wiki.ros.org/tum_simulator)
 ## Instalcja wymaganych paczek
 Zainstalować message-to-tf komendą: ```sudo apt-get install ros-indigo-message-to-tf```
+
 Zainstalować w **_catkin_ws_** dodatkowe paczki gazebo:
 
 https://github.com/ros-simulation/gazebo_ros_pkgs/tree/indigo-devel
