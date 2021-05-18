@@ -67,4 +67,4 @@ source /opt/ros/indigo/setup.bash
 source devel/setup.bash
 roslaunch cvg_sim_gazebo ardrone_testworld.launch
 ```
-Program autonomicznego podążania drona został zaimplementowany w pliku /cvg_sim_gazebo/scripts/autonomous.py 
+Program autonomicznego podążania drona został zaimplementowany w pliku _/cvg_sim_gazebo/scripts/**autonomous.py**_ 
