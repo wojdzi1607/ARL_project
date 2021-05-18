@@ -5,7 +5,8 @@ autonomicznego podążania za robotem Husky.
 
 
 ## Instalacja dockera
-W folderze docker-ros-indigo
+Pobrać pliki dockera [stąd](https://drive.google.com/file/d/1qRobw97PCbPGaR0gGytjJ35a-JCViHB-/view?usp=sharing)
+
 Wymagane są sterowniki Nvidia takie jak na hoście np. dla wersji 460.73.01
 plik **_NVIDIA-Linux-x86_64-460.73.01.run_**.
 Nazwe wersji trzeba zmienić też w pliku ```./build.sh```. Następnie budujemy obraz z tego pliku,
