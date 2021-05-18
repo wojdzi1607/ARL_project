@@ -13,11 +13,15 @@ Nazwe wersji trzeba zmienić też w pliku ```./build.sh```. Następnie budujemy 
 i uruchamiamy ```./run.sh```.
 
 ## Instalacja tum_simulator
+Zainstalować tum_simulator z:
+https://github.com/angelsantamaria/tum_simulator.git
+Nie zapomnieć zainstalować poniższych paczek:
 ```
 sudo apt-get install ros-<your_version>-hector-*
 sudo apt-get install ros-indigo-ardrone-autonomy
 ```
-source: [here](https://github.com/angelsantamaria/tum_simulator?fbclid=IwAR1p3x1oyvDtElvbBMNjb0vG-3VrMmIIsAtg54Q_C8rSbDDJpVd6TXHziG0)
+Podmienić folder **_cvg_sim_gazebo_** z oryginalnego repozytorium na folder
+**_cvg_sim_gazebo_** z tego repozytorium.
 ## Instalacja odsługi pada (opcjonalnie)
 ```
 source /opt/ros/indigo/setup.bash

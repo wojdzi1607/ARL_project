@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find cvg_sim_gazebo)/worlds/ardrone_testworld.world"/>
+    <!-- Spawn ARUCO board -->
+    <include>
+      <uri>model://tag_10/materials/scripts/tag.material</uri>
+    </include>
+  </include>
+
+  <!-- Run fly node -->
+  <node pkg="cvg_sim_gazebo" type="autonomous.py" name="autonomous_node" output="screen" />
+  <node pkg="image_view" type="image_view" name="image_view" output="screen" args="image:=/detected_markers"/>
+
+  <!-- Spawn simulated quadrotor uav -->
+  <include file="$(find cvg_sim_gazebo)/launch/spawn_quadrotor.launch" >
+    <arg name="model" value="$(find cvg_sim_gazebo)/urdf/quadrotor_sensors.urdf.xacro"/> 
+  </include>
+
+  <!--   Husky  -->
+  <group ns="husky">
+  <arg name="laser_enabled" default="$(optenv HUSKY_LASER_ENABLED true)"/>
+  <arg name="ur5_enabled" default="$(optenv HUSKY_UR5_ENABLED false)"/>
+  <arg name="kinect_enabled" default="$(optenv HUSKY_KINECT_ENABLED false)"/>
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen" />
+  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+    <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+    <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+  </include>
+  </group>
+</launch>
