@@ -46,7 +46,7 @@ na te z folderu **_husky_**
 ## Instalacja obsługi klawiatury dla Husky
 http://wiki.ros.org/teleop_twist_keyboard
 
-W pliku **_teleop_twist_keyboard.py_**w lini 82 zmienić nazwę topica na ```'/husky/cmd_vel'```
+W pliku **_teleop_twist_keyboard.py_** w lini 82 zmienić nazwę topica na ```'/husky/cmd_vel'```
 
 ## Instrukcja uruchomienia całego środowiska
 po stronie hosta (opcjonalnie - jeśli wystąpił error z DISPLAY):
