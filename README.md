@@ -10,7 +10,7 @@ Wymagane są sterowniki Nvidia takie jak na hoście.
 Wersję można sprawdzić komendą: ```nvidia-smi```.
 Np. dla wersji 460.73.01 potrzeba pliku **_NVIDIA-Linux-x86_64-460.73.01.run_**.
 Sterowniki można pobrać [stąd](https://www.nvidia.pl/Download/index.aspx?lang=pl).
-Nazwe wersji trzeba zmienić też w pliku ```./build.sh```. Następnie budujemy obraz z tego pliku,
+Nazwe wersji trzeba zmienić też w pliku **_build.sh_**. Następnie budujemy obraz za pomocą ```./build.sh```,
 i uruchamiamy ```./run.sh```.
 
 ## Instalacja tum_simulator
