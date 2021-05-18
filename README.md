@@ -14,6 +14,7 @@ i uruchamiamy ```./run.sh```.
 ## Instalacja tum_simulator
 Zainstalować tum_simulator z:
 https://github.com/angelsantamaria/tum_simulator.git
+
 Nie zapomnieć zainstalować poniższych paczek:
 ```
 sudo apt-get install ros-<your_version>-hector-*
