@@ -42,13 +42,14 @@ w **_catkin_ws/src_** tylko foldery **_gazebo_ros_pkgs_** i **_tum_simulator_**.
 Następnie w catkin_ws uruchomić ```catkin_make ```
 
 ## Husky
-Instalacja husky z oricjalnego repozytorium:
+Zainstalować z oricjalnego repozytorium:
 http://wiki.ros.org/husky_gazebo/Tutorials/Simulating%20Husky
 
 Podmienić foldery **_huksy_control_**, **_huksy_description_** i **_huksy_gazebo_**
 na te z folderu **_husky_**
 
 ## Instalacja obsługi klawiatury dla Husky
+Zainstalować z oricjalnego repozytorium: 
 http://wiki.ros.org/teleop_twist_keyboard
 
 W pliku **_teleop_twist_keyboard.py_** w lini 82 zmienić nazwę topica na ```'/husky/cmd_vel'```
