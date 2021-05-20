@@ -3,6 +3,8 @@
 Celem projektu było stworzenie środkowiska, opartego o robota Ardrone z możliwością
 autonomicznego podążania za robotem Husky.
 
+https://user-images.githubusercontent.com/48991046/118978213-59933b00-b977-11eb-816f-ffcebc0b2de3.mp4
+
 ## Instalacja dockera
 Pobrać pliki dockera [stąd](https://drive.google.com/file/d/1qRobw97PCbPGaR0gGytjJ35a-JCViHB-/view?usp=sharing).
 
@@ -12,6 +14,7 @@ Np. dla wersji 460.73.01 potrzeba pliku **_NVIDIA-Linux-x86_64-460.73.01.run_**.
 Sterowniki można pobrać [stąd](https://www.nvidia.pl/Download/index.aspx?lang=pl).
 Nazwe wersji trzeba zmienić też w pliku **_build.sh_**. Następnie budujemy obraz za pomocą ```./build.sh```,
 i uruchamiamy ```./run.sh```.
+
 W razie aktualizacji sterowników na hoście, istnieje możliwość aktualizacji ich po stronie dockera poleceniem:
 ```sh NVIDIA-Linux-x86_64-460.701.run -a -N --ui=none --no-kernel-module```
 ## Instalacja tum_simulator
