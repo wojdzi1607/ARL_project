@@ -12,7 +12,8 @@ Np. dla wersji 460.73.01 potrzeba pliku **_NVIDIA-Linux-x86_64-460.73.01.run_**.
 Sterowniki można pobrać [stąd](https://www.nvidia.pl/Download/index.aspx?lang=pl).
 Nazwe wersji trzeba zmienić też w pliku **_build.sh_**. Następnie budujemy obraz za pomocą ```./build.sh```,
 i uruchamiamy ```./run.sh```.
-
+W razie aktualizacji sterowników na hoście, istnieje możliwość aktualizacji ich po stronie dockera poleceniem:
+```sh NVIDIA-Linux-x86_64-460.701.run -a -N --ui=none --no-kernel-module```
 ## Instalacja tum_simulator
 Zainstalować tum_simulator z:
 https://github.com/angelsantamaria/tum_simulator.git
